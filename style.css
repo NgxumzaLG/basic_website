@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(109, 209, 214);
+    width: 85%;
+    margin: auto;
+    font-size: 18px;
+}
+.Webpage {
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+font-style: italic;
+color: orangered;
+text-align: center;
+min-height: 80px;
+}
+header {
+border-bottom: 1px solid orangered;
+background-color: rgb(29, 74, 82);
+padding: 2px;
+}
+.Container1 {
+display: flex;
+flex-wrap: wrap;
+}
+.city {
+ display: flex;
+}
+.ProfileContent {
+text-align: center;
+padding-top: 5px;
+margin-top: 3%;
+flex: 1;
+}
+.ProfilePic {
+/*float: right;*/
+margin-top: 1%;
+flex: 2;
+}
+.Container2 {
+clear: right;
+}
+.CityContent {
+padding-left: 1em;
+}
+.CityContent p{
+text-align: left;
+}
+.CityImg {
+float: left;
+margin-right: 5%;
+/*padding-right: 2em;*/
+}
+.Foreign {
+clear: left;
+}
+.Foreign h2 {
+padding-top: 2em;
+}
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+}
+table, td {
+padding: 7px;
+}
+table {
+width: 80%;
+}
+.Container3 {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: flex-start;
+
+}
+@media screen and (max-width:1440px){
+    .BoxContent{
+        width: 50%;
+    }
+    .BoxPic{
+        width: 50%;
+    } 
+}
