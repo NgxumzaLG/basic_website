@@ -1,82 +1,162 @@
 body {
     background-color: rgb(109, 209, 214);
-    width: 85%;
+    width: 90%;
     margin: auto;
     font-size: 18px;
 }
 .Webpage {
-font-size: 20px;
-font-family: 'Times New Roman', Times, serif;
-font-style: italic;
-color: orangered;
-text-align: center;
-min-height: 80px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: orangered;
+    text-align: center;
+    min-height: 80px;
 }
 header {
-border-bottom: 1px solid orangered;
-background-color: rgb(29, 74, 82);
-padding: 2px;
+    border-bottom: 1px solid orangered;
+    background-color: rgb(29, 74, 82);
+    padding: 2px;
 }
 .Container1 {
-display: flex;
-flex-wrap: wrap;
-}
-.city {
- display: flex;
+    display: flex;
+    justify-content: space-between;
+    /*flex-wrap: wrap;*/
 }
 .ProfileContent {
-text-align: center;
-padding-top: 5px;
-margin-top: 3%;
-flex: 1;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 3%;
+    color: orangered;
+    flex: 1;
 }
 .ProfilePic {
-/*float: right;*/
-margin-top: 1%;
-flex: 2;
+    /*float: right;*/
+    margin-top: 1%;
+    flex: 2;
+    padding-left: 1em;
+}
+.City {
+    color: orangered;
 }
 .Container2 {
-clear: right;
-}
-.CityContent {
-padding-left: 1em;
-}
-.CityContent p{
-text-align: left;
-}
-.CityImg {
-float: left;
-margin-right: 5%;
-/*padding-right: 2em;*/
-}
-.Foreign {
-clear: left;
-}
-.Foreign h2 {
-padding-top: 2em;
-}
-table, th, td {
-border: 1px solid black;
-border-collapse: collapse;
-}
-table, td {
-padding: 7px;
-}
-table {
-width: 80%;
-}
-.Container3 {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-align-items: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 
 }
-@media screen and (max-width:1440px){
+.CityImg img{
+    /*width: 80%;
+    height: auto;*/
+    background-size: contain;
+    padding-right: 2em;
+}
+.Foreign h2 {
+    padding-top: 2em;
+    color: orangered;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table, td {
+    padding: 7px;
+}
+table {
+    width: 80%;
+}
+.Container3 {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: center
+}
+.Historical{
+    color: orangered;
+}
+.Footer {
+    border-top: 1px solid orangered;
+    background-color: rgb(29, 74, 82);
+    padding: 2px;
+}
+.Footer h3 {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: orangered;
+    text-align: center;
+    min-height: 5px;
+}
+
+
+@media screen and (min-width:681px) and (max-width:1440px){
+    .CityImg {
+        width: 50%;
+    }
+    .CityContent {
+        width: 50%;
+    }
+    .CityImg img{
+        width: 80%;
+        height: auto;
+        background-size: contain
+    }
+    .Container3 {
+        flex-wrap: wrap;
+        align-items: center;
+    }
     .BoxContent{
         width: 50%;
     }
     .BoxPic{
+        width: 45%;
+    }
+    /*.BoxPic img {
+        width: 80%;
+        height: auto;
+    }*/
+}
+@media screen and  (max-width:680px){
+    .Container1 {
+        align-items: center;
+    }
+    .ProfilePic{
         width: 50%;
-    } 
+    }
+    .ProfileContent {
+        width: 50%;
+    }
+    .ProfilePic img {
+        width: 100%;
+        height: auto;
+        background-size: contain;
+        min-width: 40%;
+    }
+    .CityImg {
+        width: 50%;
+    }
+    .CityContent {
+        width: 50%;
+    }
+    .CityImg img{
+        width: 80%;
+        height: auto;
+        background-size: contain
+    }
+    .Container3 {
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .BoxContent{
+        width: 50%;
+    }
+    .BoxPic{
+        width: 45%;
+        margin-top: 20%;
+    }
+    .BoxPic img {
+        width: 90%;
+        height: auto;
+        padding-left: 1em;
+    }
 }
