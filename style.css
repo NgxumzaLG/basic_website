@@ -48,7 +48,6 @@ header {
     /*width: 80%;
     height: auto;*/
     background-size: contain;
-    padding-right: 2em;
 }
 .Foreign h2 {
     padding-top: 2em;
@@ -69,7 +68,7 @@ table {
     /*flex-wrap: wrap;*/
     justify-content: space-between;
     align-items: flex-start;
-    align-items: center
+    /*align-items: center*/
 }
 .Historical{
     color: orangered;
@@ -87,23 +86,34 @@ table {
     text-align: center;
     min-height: 5px;
 }
+@media screen and (min-width:1001px){
+    .CityImg img {
+        padding-right: 20px;
+        margin-top: 7%;
+    }
+    .BoxPic {
+        margin-top: 5%;
+        padding: 0 6px 0 6px;
+    }
+}
 
 
-@media screen and (min-width:681px) and (max-width:1440px){
+@media screen and (min-width:681px) and (max-width:1000px){
     .CityImg {
-        width: 50%;
+        width: 45%;
     }
     .CityContent {
-        width: 50%;
+        width: 55%;
     }
     .CityImg img{
-        width: 80%;
+        width: 90%;
         height: auto;
-        background-size: contain
+        background-size: contain;
+        margin-top: 7%;
     }
     .Container3 {
         flex-wrap: wrap;
-        align-items: center;
+        align-items: top;
     }
     .BoxContent{
         width: 50%;
@@ -111,11 +121,13 @@ table {
     .BoxPic{
         width: 45%;
     }
-    /*.BoxPic img {
-        width: 80%;
+    .BoxPic img{
+        width: 100%;
         height: auto;
-    }*/
+        background-size: contain;
+    }
 }
+
 @media screen and  (max-width:680px){
     .Container1 {
         align-items: center;
@@ -133,15 +145,16 @@ table {
         min-width: 40%;
     }
     .CityImg {
-        width: 50%;
+        width: 45%;
     }
     .CityContent {
-        width: 50%;
+        width: 55%;
     }
-    .CityImg img{
-        width: 80%;
+    .CityImg img {
+        width: 90%;
         height: auto;
-        background-size: contain
+        background-size: contain;
+        margin-top: 7%;
     }
     .Container3 {
         flex-wrap: wrap;
@@ -157,6 +170,6 @@ table {
     .BoxPic img {
         width: 90%;
         height: auto;
-        padding-left: 1em;
+        min-width: 30%;
     }
 }
