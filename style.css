@@ -86,7 +86,7 @@ table {
     text-align: center;
     min-height: 5px;
 }
-@media screen and (min-width:1001px){
+@media screen and (min-width:1021px){
     .CityImg img {
         padding-right: 20px;
         margin-top: 7%;
@@ -98,7 +98,7 @@ table {
 }
 
 
-@media screen and (min-width:681px) and (max-width:1000px){
+@media screen and (min-width:681px) and (max-width:1020px){
     .CityImg {
         width: 45%;
     }
@@ -139,7 +139,7 @@ table {
         width: 50%;
     }
     .ProfilePic img {
-        width: 100%;
+        width: 90%;
         height: auto;
         background-size: contain;
         min-width: 40%;
