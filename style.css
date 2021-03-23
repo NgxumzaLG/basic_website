@@ -69,7 +69,13 @@ table {
     /*flex-wrap: wrap;*/
     justify-content: space-between;
     align-items: flex-start;
-    align-items: center
+    /*align-items: center*/
+}
+.BoxPic img{
+   /*width: 100%;*/
+    /*height: auto;*/
+    /*background-size: contain;*/
+
 }
 .Historical{
     color: orangered;
@@ -89,7 +95,7 @@ table {
 }
 
 
-@media screen and (min-width:681px) and (max-width:1440px){
+@media screen and (min-width:681px) and (max-width:1000px){
     .CityImg {
         width: 50%;
     }
@@ -103,13 +109,18 @@ table {
     }
     .Container3 {
         flex-wrap: wrap;
-        align-items: center;
+        align-items: top;
     }
     .BoxContent{
         width: 50%;
     }
     .BoxPic{
         width: 45%;
+    }
+    .BoxPic img{
+        width: 100%;
+        height: auto;
+        background-size: contain;
     }
     /*.BoxPic img {
         width: 80%;
