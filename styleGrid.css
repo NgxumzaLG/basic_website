@@ -1,0 +1,17 @@
+header {
+    text-align: center;
+}
+
+.col-8 h3 {
+    margin-top: 11%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table, td {
+    padding: 7px;
+}
+table {
+    width: 90%;
+}
