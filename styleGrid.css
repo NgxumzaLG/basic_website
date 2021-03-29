@@ -4,11 +4,13 @@ header {
     background-color: rgb(109, 209, 214);
 }
 
+
 footer{
     text-align: center;
     border-top: 1px solid orangered;
     background-color: rgb(109, 209, 214);
 }
+
 
 .col-12 h2, .col-4 h2{
     color: orangered;
